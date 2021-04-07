@@ -1,0 +1,96 @@
+.font{
+    
+    text-align: center;
+}
+
+.Title{
+    text-transform: uppercase;
+    font-size: .94rem;
+    letter-spacing: 1px;
+    display: block;
+    padding: 5px 0;
+    color: #262626;
+    transition: all .4s ease-out;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 0.3rem;
+    text-decoration: none;
+}
+
+.Title:hover{
+    background-color:#b3d4fc;
+    transition: all .4s ease-out;
+}
+
+.home{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.submain{
+    width: calc(100% - 240px);
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3.2857rem;
+    z-index: 2;
+}
+
+span{
+    color: #037fff;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    /* width: 50rem; */
+    color: #484848;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+    box-shadow:  2px #888;
+    padding: 0em 0em;
+    margin-right: 10px;
+    border: 2px solid;
+    height: 53px;
+    width: 53px; 
+    border-color: #dadbe1;
+    font-size: 2.2rem;
+    color: #dadbe1;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon:hover{
+    /* border-radius: 50%; */
+    border-color: #037fff;
+    color: #037fff;
+    transition: all 0.8s ease-out;
+}
+
+#tsparticles{
+    height: 100%;
+    width: 100%;
+
+}
