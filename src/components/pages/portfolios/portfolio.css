@@ -1,7 +1,7 @@
 .portfolio{
-        margin-left: 5rem;
-        margin-top: 5rem;
-        margin-right: 5rem;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: column;
         z-index: 1;   
@@ -10,8 +10,6 @@
 .grid{
     display: flex;
     flex-direction: column; 
-    /* min-height: 650px; */
-    /* border:2px solid; */
 }
 .rows{
     margin-right: 35px;

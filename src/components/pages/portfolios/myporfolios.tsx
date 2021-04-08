@@ -15,10 +15,17 @@ import HDImage from 'react-hd-image';
 
 function Myportfolios() {
 
+    const winSize = useWindowSize();
+    let TitleFontSize = 42;
+    let DescriptionfontSize = 20;
+    if(winSize.width < 600)
+    {
+      TitleFontSize = 32;
+    }
+
     const window = useRef();
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [showIndex, setShowIndex] = useState(0);
-    const winSize = useWindowSize();
     const [settings, setSettings] = useState({
         dots: true,
         infinite: true,
@@ -105,7 +112,7 @@ function Myportfolios() {
 
     return (
         <div className='subabout'>
-            <div className="aboutme" > PORTFOLIOS </div> <br /> <br />
+            <div className="aboutme" style={{fontSize: TitleFontSize + 'px' }}> PORTFOLIOS </div> <br /> <br />
             <div className='port'>
                 <Grid container style={{ display: 'flex', flexDirection: 'column' }}>
                     <div style={{ width: Math.max((winSize.width ? winSize.width : 0) - 700, 300) + 'px' }}>

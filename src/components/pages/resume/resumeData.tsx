@@ -3,12 +3,20 @@ import {UserData, worklogo} from '../../../userdata/userdata'
 import Progress from './progress'
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import useWindowSize from '../../../utils/windowsize'
 
 
 function ResumeData(){
+  const winSize = useWindowSize();
+  let TitleFontSize = 42;
+  let DescriptionfontSize = 20;
+  if(winSize.width < 600)
+  {
+    TitleFontSize = 32;
+  }
     return(
         <div className='subabout'>
-        <div className="aboutme" > RESUME </div> <br/> <br/>
+        <div className="aboutme"  style={{fontSize: TitleFontSize + 'px' }}> RESUME </div> <br/> <br/>
         <div className="aboutme" style={{fontSize: "25px"}}><span style={{marginRight:'1rem', fontSize: '30px', width:'50px'}}>{worklogo.workicon}</span>Working Experience</div> <br/> <br/> 
         {UserData.work.map((work1: any) => {
           return (

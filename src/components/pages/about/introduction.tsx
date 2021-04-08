@@ -1,10 +1,18 @@
 import { UserData } from '../../../userdata/userdata'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import useWindowSize from '../../../utils/windowsize';
 function Introduction() {
+
+      const winSize = useWindowSize();
+       let TitleFontSize = 42;
+       if(winSize.width < 600)
+       {
+         TitleFontSize = 32;
+       }
       return (
             <div className='subabout'>
-                  <div className="aboutme">ABOUT ME </div>
+                  <div className="aboutme" style={{fontSize: TitleFontSize+ 'px'}}>ABOUT ME </div>
                   <hr />
                   <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'stretch', justifyContent: 'space-between' }}>
                         <Grid xs={12} sm={12} md={5} style={{ paddingTop: '30px' }}>

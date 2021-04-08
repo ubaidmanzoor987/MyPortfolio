@@ -1,10 +1,17 @@
 import { UserData, Services } from '../../../userdata/userdata'
 import Grid from '@material-ui/core/Grid';
+import useWindowSize from '../../../utils/windowsize'
 
 function Servicess() {
+      const winSize = useWindowSize();
+      let TitleFontSize = 42;
+       if(winSize.width < 600)
+       {
+         TitleFontSize = 32;
+       }
       return (
             <div className='subabout'>
-                  <div className="aboutme">Services </div>
+                  <div className="aboutme" style={{fontSize: TitleFontSize+ 'px'}}>Services </div>
                   <Grid container justify="flex-start" spacing={2} >
                         {Services.map((service) => (
                               <Grid xs={12} sm={12} md={6} lg={4} style={{ paddingTop: '30px' }} >

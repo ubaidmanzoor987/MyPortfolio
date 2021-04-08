@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { contact_us_api } from "../../../userdata/contactus_api";
 import { useState } from 'react';
+import useWindowSize from '../../../utils/windowsize';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -24,6 +25,16 @@ const useStyles = makeStyles((theme: Theme) =>
 
 
 function Contactinfo() {
+
+
+  const winSize = useWindowSize();
+  let TitleFontSize = 42;
+  let DescriptionfontSize = 20;
+
+  if(winSize.width < 600)
+  {
+    TitleFontSize = 32;
+  }
 
     const Forms = useForm({
         shouldFocusError: true,
@@ -98,15 +109,10 @@ function Contactinfo() {
             setError1(res.error)
         }           
     }
-
-    
-    
-        
-
     const classes = useStyles();
     return (
         <div className='subabout'>
-            <div className="aboutme" > CONTACT ME </div> <br /> <br />
+            <div className="aboutme" style={{fontSize: TitleFontSize + 'px'}} > CONTACT ME </div> <br /> <br />
 
             <Grid container className="myinfo" style={{ fontSize: 18 }}>
                 <Grid xs={12} sm={12} md={6} style={{ marginTop: '20px', marginLeft: "" }} >
@@ -114,6 +120,7 @@ function Contactinfo() {
                         <div className='form'>
                             <form className={classes.root} autoComplete="off" onSubmit={handleSubmit(onSubmit)}  >
                                 <div className="aboutme" style={{ fontSize: "25px", borderColor: '#cbced8' }}>Get In Touch</div> <br /> <br />
+                                <div >
                                 <TextField
                                     id="outlined-required"
                                     label="Enter your subject"
@@ -156,6 +163,7 @@ function Contactinfo() {
                                 onChange={(e)=>setMessage(e.target.value)} required
                                 />
 
+                                </div>     
 
                                 <Button variant="contained" color="primary" style={{ marginTop: '20px', marginLeft: '10px', backgroundColor: "#037fff", height: '3.2rem' }} disableElevation type="submit">
                                     <div>
@@ -183,7 +191,7 @@ function Contactinfo() {
                             {UserData.socialinfo.map((work1: any) => {
                                 return (
 
-                                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', padding: '10px', marginBottom: '25px', height: '175px', backgroundColor: '#e4e4e4', width: 'calc(100% - 12.5%)' }}>
+                                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', padding: '10px', marginBottom: '25px', backgroundColor: '#e4e4e4', }}>
                                         <div className='social-icon' style={{ margin: '10px 10px 4px' }}>
                                             {work1.icon}
                                         </div>
@@ -192,7 +200,7 @@ function Contactinfo() {
                                                 {work1.type}
                                             </div>
                                             <div className='address' style={{ margin: '5px' }}>
-                                                {work1.address}
+                                                <span style={{width: '100%', overflowWrap: 'anywhere'}}>{work1.address}</span>
                                             </div>
                                         </div>
                                     </div>

@@ -226,7 +226,7 @@ portfoliodata:
                 portfolioname: 'Ultra-Notel',
                 link: '#',
                 aboutPortfolio: 'UltraNote Infinity Cloud has been designed to bring additional Flexibility and Mobility within the UltraNote Ecosystem. As a complement to Our Flagship Desktop UltraNote Infinity GUI Wallet, UltraNote Infinity Cloud allows you to have 24/7 access to your UltraNote Infinity Coins on the Move.',
-                description: '',
+                description: 'The Easiest and Most Popular Way To Send, Receive and Store your UltraNote Infinity Coins Online. Developed using Node.js, Express , React and MongoDB',
             },
             {
                 icon: <AiIcons.AiOutlineZoomIn/>,

@@ -9,6 +9,11 @@ import { maxHeaderSize } from "node:http";
 
 function Reviewss() {
   const winSize = useWindowSize();
+  let TitleFontSize = 42;
+       if(winSize.width < 600)
+       {
+         TitleFontSize = 32;
+       }
   const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
@@ -39,7 +44,7 @@ function Reviewss() {
 
   return (
     <div className="subabout">
-      <div className='aboutme'>Reviews</div>
+      <div className='aboutme' style={{fontSize: TitleFontSize+ 'px'}}>Reviews</div>
       <br /> <br />
       <Grid container justify="flex-start" style={{ display: "flex", flexDirection: "row", maxWidth: '100%' }}>
         <div style={{ width: Math.max((winSize.width ? winSize.width : 0) - 600, 250) + 'px' }}>
