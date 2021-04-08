@@ -158,3 +158,5 @@ p{
 .color-primary{
     color: #037fff;
 }
+
+.slick-slide, .slick-slide *{ outline: none !important; }
