@@ -28,7 +28,7 @@ function Home() {
           <div className='subabout' style={{alignItems: 'center', justifyContent: 'center'}}>
             <div className="bold" style={{fontSize: TitleFontSize + 'px'}}>{UserData.greet}<span className='color-primary'>{UserData.name}</span></div>
              
-            <p style={{width: Math.max((winSize.width/2), 300) + 'px', fontWeight: 600, fontSize: DescriptionfontSize + 'px'}}> {UserData.about} </p> 
+            <p style={{width: Math.max((winSize.width/2), 300) + 'px', fontWeight: 600, fontSize: DescriptionfontSize + 'px'}}> {UserData.summary} </p> 
             
             <div className="icons">
             

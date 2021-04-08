@@ -1,0 +1,3 @@
+Name: RedditPostScrapper
+Description:
+This Scapper scrapp the posts of reddit. This Scrapper is built with Python And Praw. The Result store in database.

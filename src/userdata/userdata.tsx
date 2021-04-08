@@ -30,11 +30,29 @@ import junglework1 from './JungleWork/img1.png'
 import junglework2 from './JungleWork/img2.png'
 import junglework3 from './JungleWork/img3.png'
 import junglework4 from './JungleWork/img4.png'
+import awbtransport1 from './awbtransport/img1.png'
+import awbtransport2 from './awbtransport/img2.png'
+import awbtransport3 from './awbtransport/img3.png'
+import awbtransport4 from './awbtransport/img4.png'
+import awbtransport5 from './awbtransport/img5.png'
+import awbtransport6 from './awbtransport/img6.png'
+import awbtransport7 from './awbtransport/img7.png'
+import awbtransport8 from './awbtransport/img8.png'
+import billauto1 from './billing automation/1.png'
+import billauto2 from './billing automation/2.png'
+import reditscrap1 from './Reddit Scrapper/0.png'
+import reditscrap2 from './Reddit Scrapper/1.png'
+import reditscrap3 from './Reddit Scrapper/2.png'
+import soundscrap1 from './Sound Cloud Scrapper/img1.png'
+import soundscrap2 from './Sound Cloud Scrapper/img2.png'
+import soundscrap3 from './Sound Cloud Scrapper/img3.png'
+
 
 
 export const UserData ={
         greet: 'Hi, I am ',
         name: 'Abdul Rehman Mirza',
+        summary: 'I am full stack developer having 4 years experience in building Web Apps using MEAN, MERN, Python (Django & Flask), .Net Core and .Net MVC, Mobile Apps using React Native and Web Scrappers using Python Selenium and .Net C#',
         about: "A dedicated, highly-skilled, & reputable Software Engineer & Developer with 4+ years’ extensive practical experience. With strong expertise in Development of Web (Html, CSS, JavaScript, PHP, & MVC) & DesktopApplication ( C, C++, Python, .NET & C#), Python Flask, Django, Angular, Front-End & Back-End Development,Socket & Serial programming, and & Software Engineering Techniques. Highly skilled & elective leadership,Team-Oriented, Technical & Non-Technical, IT Operating environment, Design & setup of IT Systems to drivecompany growth & technical innovation. Currently working with Crossover as a Front-End Software Engineer. Strong Software Engineering skills proficient in determining requirements & resolving technical issuesquickly. Outstanding presentation and communication skills with abilities to understand business requirements to cross-collaborate & increase productivity.",
 
         GithubIcon: <AiIcons.AiOutlineGithub/>,
@@ -174,8 +192,8 @@ portfoliodata:
                 pic: tradeReport1,
                 pics: [tradeReport1, tradeReport2, tradeReport3],
                 portfolioname: 'Trade Reporting App',
-                aboutPortfolio: 'A Trade Reporting Table with blockchain',
-                description: 'I created the front View Sidebar where the specific pages were included and managed the table filters, enumerations, added the buttons of the specific page on the top.',
+                aboutPortfolio: 'A Trade Reporting Table with blockchain.',
+                description: 'I created the front View Sidebar where the specific pages were included and managed the table filters, enumerations, added the buttons of the specific page on the top, defined schemas, added the filers.',
             },
             {
                 icon: <AiIcons.AiOutlineZoomIn/>,
@@ -207,11 +225,38 @@ portfoliodata:
             {
                 icon: <AiIcons.AiOutlineZoomIn/>,
                 linkicon: <AiIcons.AiOutlineLink/>,
-                pic: junglework1,
-                portfolioname: 'random',
+                pic: awbtransport1,
+                portfolioname: 'AWB Transport',
+                aboutPortfolio: 'This is a transportation website for truck drivers where they can import/export the goods and services throught the transporation. They can apply, create their own profile,',
+                pics: [awbtransport1, awbtransport2, awbtransport3,awbtransport4,awbtransport5,awbtransport6,awbtransport7,awbtransport8],
+                description: 'Made this Website using React and Flask.',
+            },
+            {
+                icon: <AiIcons.AiOutlineZoomIn/>,
+                linkicon: <AiIcons.AiOutlineLink/>,
+                pic: billauto1,
+                portfolioname: 'Billing Automation',
+                aboutPortfolio: 'The Most Effective Way of Managing Your Project.',
+                pics: [billauto1, billauto2],
+                description: "It is an automated app that is build using c#. It read the data from PDF'S. And fill the data on website. ",
+            },
+            {
+                icon: <AiIcons.AiOutlineZoomIn/>,
+                linkicon: <AiIcons.AiOutlineLink/>,
+                pic: reditscrap1,
+                pics: [reditscrap1, reditscrap2, reditscrap3],
+                portfolioname: 'Reddit Scrapper',
                 aboutPortfolio: 'A beautiful t-shirt mockup.',
-                pics: [junglework1, junglework1, junglework1],
-                description: '',
+                description: 'This Scapper scrapp the posts of reddit. This Scrapper is built with Python And Praw. The Result store in database.',
+            },
+            {
+                icon: <AiIcons.AiOutlineZoomIn/>,
+                linkicon: <AiIcons.AiOutlineLink/>,
+                pic: soundscrap1,
+                portfolioname: 'Sound Cloud Scrapper',
+                aboutPortfolio: 'A beautiful t-shirt mockup.',
+                pics: [soundscrap1, soundscrap1, soundscrap1],
+                description: 'This Application Scrapped the data of sound cloud rappers. Using Python and Selenium and beautifull Soap. and Save the resultant file in CSv Format.',
             },
              
             

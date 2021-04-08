@@ -1,0 +1,3 @@
+Name: Sound Cloud Scrapepr
+Descroiption:
+This Application Scrapped the data of sound cloud rappers. Using Python and Selenium and beautifull Soap. and Save the resultant file in CSv Format.
