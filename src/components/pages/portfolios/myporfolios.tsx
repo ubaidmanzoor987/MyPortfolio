@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useWindowSize from '../../../utils/windowsize'
 import { AutorenewTwoTone } from '@material-ui/icons';
+import HDImage from 'react-hd-image';
 
 
 
@@ -32,7 +33,7 @@ function Myportfolios() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1  
+        slidesToScroll: 1
     }
 
     useEffect(() => {
@@ -71,7 +72,7 @@ function Myportfolios() {
     let E_grid: any[] = [];
     for (let i = 0; i < data.length; i += 3) {
         let i_grid = [];
-        for (let k = 0; k < 3; k++) {
+        for (let k = 0; k < 3 && i + k < data.length; k++) {
             const data1 = data[i + k];
             i_grid.push(<Grid style={{ display: 'flex', flexDirection: 'column' }} key={i + k}>
                 <div className='rows'>
@@ -85,7 +86,7 @@ function Myportfolios() {
                         </div>
                     </div>
                     <div className='portfolio-name'><a href="https://dribbble.com/" target="_blank" className="portfolio-name-hover" >{data1.portfolioname}</a></div>
-                    <div className='about-portfolio'>{data1.aboutPortfolio}</div>
+                    {/* <div className='about-portfolio'>{data1.aboutPortfolio}</div> */}
                 </div>
             </Grid>);
         }
@@ -93,7 +94,10 @@ function Myportfolios() {
     }
 
     const modalSliderImages = (UserData.portfoliodata[showIndex].pics).map((arr) => (
-        <img key={arr} src={arr} className='my-image'></img> 
+        <>
+            <div className='app-name'><span>{UserData.portfoliodata[showIndex].portfolioname}</span></div>
+            <HDImage key={arr} src={arr} className='my-image'></HDImage>
+        </>
     ));
 
     return (
@@ -129,7 +133,7 @@ function Myportfolios() {
                     borderColor: 'transparent',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    width: Math.max((winSize.width/2), 400) + 'px',
+                    width: Math.max((winSize.width / 1.3 - 100), 400) + 'px',
                     position: 'static'
                 }
             }}
@@ -137,16 +141,29 @@ function Myportfolios() {
                 shouldCloseOnOverlayClick={true}
                 onRequestClose={() => { setModalIsOpen(false) }}
             >
-                <div className='image-div' >
-                    <div style={{ width: Math.max((winSize.width/2 - 200), 300) + 'px' }}>
-                        <Slider  className='img-slider' {...ImgSettings}>
-                            {modalSliderImages.map(grid => {
-                                    return grid;
-                                })}
-                         </Slider>
-                        <div className='description'><div className='inner-text'><span style={{ fontSize: '16px', fontWeight: 'bold' }} >Description: <br />  </span>{UserData.portfoliodata[showIndex].description}</div> </div>
+                <Grid container>
+                    <div className='image-div' >
+                        <div style={{ width: Math.max((winSize.width / 1.3 - 200), 300) + 'px' }}>
+                            <Grid>
+                                <Slider className='img-slider' {...ImgSettings}>
+                                    {modalSliderImages.map(grid => {
+                                        return grid;
+                                    })}
+                                </Slider>
+                            </Grid>
+                            <div className='description'>
+                                <div className='inner-text'>
+                                    <span style={{ fontSize: '16px', fontWeight: 'bold' }} >Description: <br />  </span>
+                                    <span style={{fontSize: '13px', fontWeight: 400}}>{UserData.portfoliodata[showIndex].description}</span>
+                                    </div>
+                                <div className='about-project'>
+                                    <span style={{ fontSize: '16px', fontWeight: 'bold' }} >About: <br />  </span>
+                                    <span style={{fontSize: '13px', fontWeight: 400}}>{UserData.portfoliodata[showIndex].aboutPortfolio}</span>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                </div>  
+                </Grid>
             </Modal>
         </div>
     );

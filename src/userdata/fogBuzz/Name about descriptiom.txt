@@ -1,0 +1,7 @@
+FogBugz
+
+FogBugz is an integrated web-based project management system featuring bug and issue tracking, discussion forums, wikis, customer relationship management, and evidence-based scheduling originally developed by Fog Creek Software.
+
+
+Worked with the Fogbugz team to rewrite the application in serverless approach using Angular 8, NodeJS, Express, Typescript, and AWS technologies Amplify, Cloudformation, Lambda, DynamoDB, Clouwatch, Cloudfront, S3, StepFunctions, Appsync, ApiGateway.
+

@@ -28,6 +28,7 @@
     text-align: center;
     align-items: center;
     display: flex;
+    min-height: 100%;
 }
 
 .submain{
@@ -39,18 +40,20 @@
     font-weight: 700;
     font-size: 3.2857rem;
     z-index: 2;
+    min-height: 100%;
 }
 
 span{
     color: #037fff;
 }
 
-p{
-    font-size: 1.2rem;
+/* p{
+    font-size: 1rem;
     line-height: 2rem;
-    /* width: 50rem; */
     color: #484848;
-}
+} */
+
+
 
 .bold{
     font-weight: 800;

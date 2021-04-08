@@ -15,7 +15,7 @@ function Education() {
                 <div className='circle'>
                 </div>
                 <div className='experience-date'>
-                  {work1.ExperienceDate}
+                  {work1.duaration}
                 </div>
               </div>
             </Grid>

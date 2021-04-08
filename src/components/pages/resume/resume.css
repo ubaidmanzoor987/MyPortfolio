@@ -68,7 +68,7 @@
 }
 
 .company-name{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 18px;
     font-weight: bold;
     color: #282828;
@@ -85,4 +85,16 @@
 
 .experience-date{
     font-weight: 800;
+}
+
+.statistics{
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.img-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }

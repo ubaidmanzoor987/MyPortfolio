@@ -1,8 +1,6 @@
 import { UserData } from '../../../userdata/userdata'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Progress from '../../pages/resume/progress';
-
 function Introduction() {
       return (
             <div className='subabout'>
@@ -22,14 +20,18 @@ function Introduction() {
                                     </div>
                                     {Object.keys(UserData.about_info).map((key: string) => {
                                           return (
+                                                
                                                 <div className="myinfo" style={{ fontSize: 18 }}>
-                                                      <div className='about_me_label' >{key}</div>
-                                                      <div className='about_me_value'>: {UserData.about_info[key as 'FullName']}</div>
+                                                      
+                                                      <Grid container>
+                                                      <Grid xs={12} md={3} className='about_me_label' >{key} :</Grid>
+                                                      <Grid xs ={12} md={9} className='about_me_value'>{UserData.about_info[key as 'FullName']}</Grid>
+                                                      </Grid>
                                                 </div>
                                           );
                                     })}
                                     <Button variant="contained" color="primary" style={{ marginTop: '20px', backgroundColor: "#037fff" }} disableElevation>
-                                          DOWNLOAD CV
+                                         <a href='/static/Resume.pdf' download style={{textDecoration: 'none', color:'white'}}>DOWNLOAD CV </a>
                                     </Button>
                               </div>
                         </Grid>

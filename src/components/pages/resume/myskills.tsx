@@ -22,8 +22,23 @@ function Skills() {
                             );
                         })}
                     </Grid>
-                </div>  
-
+                </div>
+            </div>
+            <div style={{width: '100%'}}>
+                <br /><br /><br />
+                <div className="aboutme" >Statistics</div>
+                <br/>
+                <div className='img-background'>
+                    <Grid container>
+                        {UserData.skillstats.map((stats) => {
+                            return(
+                                <Grid xs={12} md={6}>
+                            <figure><embed className='statistics' src={stats}></embed></figure>
+                        </Grid>
+                            )
+                        })}       
+                    </Grid>
+                </div>
             </div>
         </div>
     );
