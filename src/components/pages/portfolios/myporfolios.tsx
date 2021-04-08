@@ -81,11 +81,14 @@ function Myportfolios() {
                         <div className='protfolioImageHover' style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0 }} >
                             <div className='portfolio-links' style={{ alignItems: 'center', justifyContent: 'center', height: '100%' }} >
                                 <button onClick={() => { setModalIsOpen(true); setShowIndex(i + k) }} className='magnifier'>{data1.icon}</button>
-                                <a href="https://dribbble.com/" target="_blank"><button className='magnifier'>{data1.linkicon}</button></a>
+                                {
+                                    data1.link === '#'? <></>:
+                                    <a href={data1.link} target="_blank"><button className='magnifier'>{data1.linkicon}</button></a>
+                                }
                             </div>
                         </div>
                     </div>
-                    <div className='portfolio-name'><a href="https://dribbble.com/" target="_blank" className="portfolio-name-hover" >{data1.portfolioname}</a></div>
+                    <div className='portfolio-name'><a href={data1.link} target="_blank" className="portfolio-name-hover" >{data1.portfolioname}</a></div>
                     {/* <div className='about-portfolio'>{data1.aboutPortfolio}</div> */}
                 </div>
             </Grid>);
