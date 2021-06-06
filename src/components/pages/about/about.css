@@ -1,200 +1,198 @@
-.about{
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    z-index: 1;
+.about {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.subabout{
-    margin-top: 60px;
-    margin-left: 10%;
-    margin-right: 10%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.subabout {
+  margin-top: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.picture{
-    width: 50%;
+.picture {
+  width: 50%;
 }
 
-.aboutme{
-    font-weight: 700;
-    font-size:3rem;
+.aboutme {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-.info{
-    height: 80%;
-    display: flex;
-    width: 50%;
+.info {
+  height: 80%;
+  display: flex;
+  width: 50%;
 }
 
-.mypic{
-    width: 100%;
+.mypic {
+  width: 100%;
 }
 
-.data{
-    height: 80%;
-    margin-left: 20rem;
-    margin-top: -38.5%;
-
+.data {
+  height: 80%;
+  margin-left: 20rem;
+  margin-top: -38.5%;
 }
 
-.myself{
-    font-weight: 800;
-    font-size: 24px;
-    margin-left: 20px;
+.myself {
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 20px;
 }
 
-.paragraph{
-    font-size: 20;
-    color: #484848;
-    letter-spacing: 0.4px;
-    font-weight: 400;
-    align-items: center;
-    justify-items: center;
-    margin: 0;
-    margin-bottom: 20px;
+.paragraph {
+  font-size: 20;
+  color: #484848;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-.myinfo{
-    display: flex;
-    flex-direction: row;
+.myinfo {
+  display: flex;
+  flex-direction: row;
 }
 
-.about_me_label{
-    color: #484848;
-    width: 150px;
+.about_me_label {
+  color: #484848;
+  width: 150px;
 }
 
 .about_me_value {
-    color: #484848;
-    font-weight: 400;
+  color: #484848;
+  font-weight: 400;
 }
 
-.btn{
-    min-width:250px;
-    margin-top: 5.5%;
-    min-height: 100px;
+.btn {
+  min-width: 250px;
+  margin-top: 5.5%;
+  min-height: 100px;
 }
 
-.btnx{
-    height: 100rem;
-    width: 11rem;
-    background-color: #037fff;
-    border: 2px solid;
-
+.btnx {
+  height: 100rem;
+  width: 11rem;
+  background-color: #037fff;
+  border: 2px solid;
 }
 
-.services{
-    border-top:5px solid;
-    height: 14rem;
-    background-color: #e4e4e4;
-    border-color: #cbced8;
-    color: #151515;
-    font-weight: 600;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    margin-right: 25px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
+.services {
+  border-top: 5px solid;
+  height: 14rem;
+  background-color: #e4e4e4;
+  border-color: #cbced8;
+  color: #151515;
+  font-weight: 600;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.services:hover{
-    border-top-color: #037fff;
-    transition: 0.5s;
+.services:hover {
+  border-top-color: #037fff;
+  transition: 0.5s;
 }
 
-.icons{
-    font-size: 50px;
-    color: #037fff;
-    margin-left: 20px;
+.icons {
+  font-size: 50px;
+  color: #037fff;
+  margin-left: 20px;
 }
 
-.my-service{
-    padding-left: 20px;
-    padding-top: 10px;
+.my-service {
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
-.about-service{
-    margin-left: 20px;
-    margin-top: 12px;
-    color: #313131;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 500;
+.about-service {
+  margin-left: 20px;
+  margin-top: 12px;
+  color: #313131;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.reviews{
-    background-color: #e4e4e4;
-    border-color: #cbced8;
-    color: #151515;
-    font-weight: 600;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-    margin-right: 25px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: center;
-    margin-left: 25px;
-    position: relative;
+.reviews {
+  background-color: #e4e4e4;
+  border-color: #cbced8;
+  color: #151515;
+  font-weight: 600;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  margin-left: 25px;
+  position: relative;
 }
-.reviews::after{
-    content: "";
-    border-width: 15px;
-    width: 30px;
-    position: absolute;
-    border-top-color: #e4e4e4;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #e4e4e4;
-    top: 100%;
-    left: 30px;
-    border-style: solid;
-}
-
-.comment{
-    font-size: 2rem;
-    color: grey;
+.reviews::after {
+  content: "";
+  border-width: 15px;
+  width: 30px;
+  position: absolute;
+  border-top-color: #e4e4e4;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #e4e4e4;
+  top: 100%;
+  left: 30px;
+  border-style: solid;
 }
 
-.client-review{
-    margin-left: 20px;
-    margin-top: 20px;
-    color: #313131;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 500;
+.comment {
+  font-size: 2rem;
+  color: grey;
 }
 
-.client-name{
-    margin-left: 30px;
-    margin-top: 25px;
-    color: #313131;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 600;
+.client-review {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #313131;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.client-designation{
-    font-size: 16px;
-    margin-left: 30px;
-    margin-top: 5px;
+.client-name {
+  margin-left: 30px;
+  margin-top: 25px;
+  color: #313131;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.slide{
-    max-width: 75rem;
+.client-designation {
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.slide {
+  max-width: 75rem;
 }

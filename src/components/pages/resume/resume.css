@@ -1,100 +1,99 @@
-.resume
-{
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    z-index: 1;
+.resume {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.skills{
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 1rem;
+.skills {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
-.experiencedate{
-    font-size: 20px;
-    min-width: 250px;
+.experiencedate {
+  font-size: 20px;
+  min-width: 250px;
 }
 
-.date{
-    font-size: 21px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    border: 2px solid
+.date {
+  font-size: 21px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  border: 2px solid;
 }
 
-.flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
-.title{
-    border: 2px solid;
-    color: #037fff;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
+.title {
+  border: 2px solid;
+  color: #037fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
-.circle{
-   width:10px;
-    height: '10px';
-    border-radius: 50%;
-    border-width: 3px;
-    border-color: black;
-    margin-right: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border-width: 4px;
-    border-color: black;
-    border-color: #d3d5dd;
-    margin-right: 10px;
-    border-style: solid;
+.circle {
+  width: 10px;
+  height: "10px";
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: black;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: black;
+  border-color: #d3d5dd;
+  margin-right: 10px;
+  border-style: solid;
 }
 
-.designation{
-    color: #037fff;
-    font-size: 22px;
-    font-weight: 800;
+.designation {
+  color: #037fff;
+  font-size: 22px;
+  font-weight: 800;
 }
 
-.company-name{
-    margin-top: 0.5rem;
-    font-size: 18px;
-    font-weight: bold;
-    color: #282828;
+.company-name {
+  margin-top: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #282828;
 }
 
-.summary{
-    font-size: 18px;
-    margin-top: 0.5rem;
+.summary {
+  font-size: 18px;
+  margin-top: 0.5rem;
 }
 
-.MuiLinearProgress-barColorPrimary{
-    color: #037fff
+.MuiLinearProgress-barColorPrimary {
+  color: #037fff;
 }
 
-.experience-date{
-    font-weight: 800;
+.experience-date {
+  font-weight: 800;
 }
 
-.statistics{
-    margin-left: 35px;
-    margin-bottom: 10px;
+.statistics {
+  margin-left: 35px;
+  margin-bottom: 10px;
 }
 
-.img-background{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.img-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }

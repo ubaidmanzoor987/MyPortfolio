@@ -2,13 +2,15 @@ import Particles from "react-tsparticles";
 
 function Animation() {
   return (
-        <div style={{position: "fixed", height: "100%" , width: "100%", zIndex: -1}}>
-           <Particles
+    <div
+      style={{ position: "fixed", height: "100%", width: "100%", zIndex: -1 }}
+    >
+      <Particles
         id="tsparticles"
         options={{
           background: {
             color: {
-              // value: "#e4e4e4",
+              value: "#e4e4e4",
             },
           },
           fpsLimit: 60,
@@ -43,7 +45,7 @@ function Animation() {
           },
           particles: {
             color: {
-              value: "#a2a2a2",
+              value: "#808080",
             },
             links: {
               // color: "#ffffff",
@@ -84,8 +86,8 @@ function Animation() {
           detectRetina: true,
         }}
       />
-        </div>
-  )
+    </div>
+  );
 }
 
 export default Animation;

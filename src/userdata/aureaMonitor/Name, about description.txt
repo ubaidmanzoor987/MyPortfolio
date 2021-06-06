@@ -1,6 +1,0 @@
-Aurea Monitor
-
-Aurea Monitor delivers the system monitoring, root-cause analysis, and issue identification tools you need to run your business in real time.
-
-Work with team to recreate the graphs which were previously built using Flash Player. Used the Technologies ReactJS, Fusion Charts, High Charts, ExtJS, Java servelets. Created a timelinebar component in ReactJS.
-

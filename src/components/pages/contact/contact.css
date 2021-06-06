@@ -1,88 +1,88 @@
-*{
-    font-family: Nunito, sans-serif  !important;
-  }
-.contact{
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+* {
+  font-family: Nunito, sans-serif !important;
+}
+.contact {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 
-.textfield{
-position: relative;
+.textfield {
+  position: relative;
 }
 
-.contact-info{
-    /* border: 2px solid; */
-    align-items: center;
-    justify-items: right;
-    height: 30rem;
-    width: 30rem;
+.contact-info {
+  /* border: 2px solid; */
+  align-items: center;
+  justify-items: right;
+  height: 30rem;
+  width: 30rem;
 }
 
-.aboutme{
-    min-width: 100%;
+.aboutme {
+  min-width: 100%;
 }
 
-.about-me{
-    min-width: 100%;
+.about-me {
+  min-width: 100%;
 }
-.form{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-.socialinfo{
-    display: flex;
-    flex-direction: column;
-    height: 1rem;
+.socialinfo {
+  display: flex;
+  flex-direction: column;
+  height: 1rem;
 }
 
 textarea {
-    resize: vertical;
-    background: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    padding: 10px 15px;
+  resize: vertical;
+  background: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 10px 15px;
 }
 
-.label{
-    display: inline-block;
-    position: absolute;
-    font-size: 13px;
-    margin-left: 17px;
+.label {
+  display: inline-block;
+  position: absolute;
+  font-size: 13px;
+  margin-left: 17px;
 }
 
-.social-icon{
-    font-size: 38px;
-    height: 6rem;
+.social-icon {
+  font-size: 38px;
+  height: 6rem;
 }
 
-.type{
-    margin-top: -4.75rem;
-    margin-left: 2rem;
+.type {
+  margin-top: -4.75rem;
+  margin-left: 2rem;
 }
 
-.address{
-    margin-left: -3.3rem;
+.address {
+  margin-left: -3.3rem;
 }
 
-.message{
-    width: 80%;
-    background-color: #d4edda;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.message {
+  width: 80%;
+  background-color: #d4edda;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.error{
-    width: 80%;
-    background-color: #f8d7da;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.error {
+  width: 80%;
+  background-color: #f8d7da;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

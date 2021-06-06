@@ -1,18 +1,22 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import LinearProgress, { LinearProgressProps } from '@material-ui/core/LinearProgress';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import LinearProgress, {
+  LinearProgressProps,
+} from "@material-ui/core/LinearProgress";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 
-function LinearProgressWithLabel(props: LinearProgressProps & { value: number }) {
+function LinearProgressWithLabel(
+  props: LinearProgressProps & { value: number }
+) {
   return (
-    <Box display="flex" alignItems="center" >
-      <Box width="100%" mr={1} >
-        <LinearProgress variant="determinate" {...props} color='primary'    />
+    <Box display="flex" alignItems="center">
+      <Box width="100%" mr={1}>
+        <LinearProgress variant="determinate" {...props} color="primary" />
       </Box>
-      <Box minWidth={35}  width={100} >
+      <Box minWidth={35} width={100}>
         <Typography variant="body2" color="textSecondary">{`${Math.round(
-          props.value,
+          props.value
         )}%`}</Typography>
       </Box>
     </Box>
@@ -21,14 +25,13 @@ function LinearProgressWithLabel(props: LinearProgressProps & { value: number })
 
 const useStyles = makeStyles({
   root: {
-    width: '100%',
-
+    width: "100%",
   },
 });
 
 type PropsType = {
-    percent: number;
-}
+  percent: number;
+};
 
 export default function LinearWithValueLabel(props: PropsType) {
   const classes = useStyles();
@@ -36,7 +39,7 @@ export default function LinearWithValueLabel(props: PropsType) {
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress));
+      setProgress((prevProgress) => prevProgress);
     }, 800);
     return () => {
       clearInterval(timer);
@@ -44,8 +47,8 @@ export default function LinearWithValueLabel(props: PropsType) {
   }, []);
 
   return (
-    <div className={classes.root} >
-      <LinearProgressWithLabel value={progress} style={{width:"100%"}}/>
+    <div className={classes.root}>
+      <LinearProgressWithLabel value={progress} style={{ width: "100%" }} />
     </div>
   );
 }

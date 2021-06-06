@@ -12,7 +12,6 @@ export async function contact_us_api(data: any ) {
                }
             }) ;
             const resultData = await res.json();
-            //console.log("resultData", resultData);
             return resultData;
     } catch (ex) {
         //console.log("exception", ex);
